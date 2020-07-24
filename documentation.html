@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <title>DebugUs: Documentation</title>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon">
+                    
+                </span>
+            </button>
+
+
+
+            <a class="navbar-brand mr-auto" href="#"><img src="img/logo.png" height="30" width="41"></a>
+            <div class="collapse navbar-collapse" id="Navbar"> 
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="./index.html">
+                    <span class="fa fa-home fa-lg"></span>
+                    Home</a> </li>
+                    
+                <li class="nav-item active"><a class="nav-link" href="#">
+                    <span class="fa fa-list fa-lg"></span>
+                    Documentation</a> </li>
+                    <li class="nav-item"><a class="nav-link" href="./aboutus.html">
+                        <span class="fa fa-info fa-lg"></span>
+                        About Us</a> </li>
+                
+                
+            </ul>
+            </div>
+        </div>
+
+    </nav>
+    <header class="jumbotron">
+        <div class="container">
+            <div class="row row-header">
+                <div class="col-12 col-sm-6">
+                    <h1>DebugUs</h1>
+                    <p>Mars Colonization Program<br>
+                        Mentorship Program 2020 <br> Microsoft</p>
+                </div>
+                <div class="col-12 col-sm align-self-center">
+                    <img src="img/logo.png" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </header>
+<!--------------------------------------------------------------------->
+    <div class="container">
+        <div class="row">
+            <ol class="col-12 breadcrumb">
+                <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+                <li class="breadcrumb-item"><a>Documentation</a></li>
+            </ol>
+            <div class="col-12">
+               <h3>Documentation</h3>
+               <hr>
+            </div>
+        </div>
+
+       
+    
+    
+          
+
+
+           
+        </div>
+        
+
+        <div class="row ">
+            <div class="col-12 col-sm-8 offset-2">
+               
+                
+
+                <div id="accordion">
+                    <div class="card">
+                        <div class="card-header" role="tab" id="peterhead">
+                        <h3 class="mb-0">
+                            <a data-toggle="collapse" data-target="#peter">
+                            Problem Statement <small></small>
+                            </a>
+                        </h3>
+                        </div>
+                        <div class="collapse show" id="peter" data-parent="#accordion">
+                            <div class="card-body">
+                                <p class="d-none d-sm-block">This is our project for The Mars Colonization Program, 2020<br>
+                                The project is about to help the  Mars Curiosity Rover find the shortest path between two points 
+                                while avoiding obstacles on the way. <br>
+                                We have used certain algorithms to find the distance between the Starting and Ending point while avoiding the barriers/ obstacles. The algorthims are mentioned below. Click on it to find more.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" role="tab" id="dannyhead">
+                        <h3 class="mb-0">
+                            <a class="collapsed" data-toggle="collapse" data-target="#danny">
+                            A* Algorithm <small></small>
+                            </a>
+                        </h3>
+                    </div>
+                    <div class="collapse" id="danny" data-parent="#accordion">
+                        <div class="card-body">
+                            <p class="d-none d-sm-block">What A* Search Algorithm does is that at each step it picks the node according to a value-‘f’ which is a parameter equal to the sum of two other parameters – ‘g’ and ‘h’.
+                                <br> At each step it picks the node/cell having the lowest ‘f’, and process that node/cell.
+<br>
+                                We define ‘g’ and ‘h’ as simply as possible below
+                                <br>
+                                g = the movement cost to move from the starting point to a given square on the grid, following the path generated to get there.
+                   <br> h = the estimated movement cost to move from that given square on the grid to the final destination.<br>
+                    This is often referred to as the heuristic, which is nothing but a kind of smart guess.
+                    <br> We really don’t know the actual distance until we find the path, because all sorts of things can be in the 
+                    way (walls, water, etc.). There can be many ways to calculate this ‘h’.
+                     But we have used manhattan, which is nothing but the sum of absolute values of differences in the goal’s x and y coordinates and the
+                     current cell’s x and y coordinates respectively.
+                                    
+                                    </p>
+                </div>
+                    </div>
+                </div>
+                <div class="card">
+                        <div class="card-header" role="tab" id="agumbehead">
+                        <h3 class="mb-0">
+                            <a class="collapsed" data-toggle="collapse" data-target="#agumbe">
+                            Breadth First Search <small></small>
+                            </a>
+                        </h3>
+                    </div>
+                    <div class="collapse" id="agumbe" data-parent="#accordion">
+                        <div class="card-body">
+                            <p class="d-none d-sm-block">BFS is a traversing algorithm where you should start traversing from a selected node (source or starting node) and traverse the graph layerwise thus exploring the neighbour nodes (nodes which are directly connected to source node). You must then move towards the next-level neighbour nodes.
+<br>
+                                As the name BFS suggests, you are required to traverse the graph breadthwise as follows:
+                                <br>
+                                    First move horizontally and visit all the nodes neighbour of the current layer
+                                 <br>   Move to the next layer neighbours
+                                </em></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--
+                <div class="card">
+                        <div class="card-header" role="tab" id="albertohead">
+                        <h3 class="mb-0">
+                            <a class="collapsed" data-toggle="collapse" data-target="#alberto">
+                            Dijkstra <small></small>
+                            </a>
+                        </h3>
+                    </div>
+                    <div class="collapse" id="alberto" data-parent="#accordion">
+                        <div class="card-body">
+                            <p class="d-none d-sm-block">WRITE ABOUT DIJKSTRA></p>
+                        </div>
+                    </div>
+                </div>
+                    -->
+                    
+    
+                </div>
+
+                </div>
+       </div>
+
+
+       
+       
+    </div>
+<!------------------------------------------------------------------->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">             
+                <div class="col-4 offset-1 col-sm-6">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./aboutus.html">About Us</a></li>
+                       
+                    </ul>
+                </div>
+                <div class="col-7 col-sm-5">
+                    <h5>Our Github Repo link</h5>
+                    
+		              <i class="fa fa-github fa-lg"></i><a href="https://github.com/VaibhaviAgrawal/mars-colonisation-program">click here</a><br>
+		              
+                </div>
+                
+           </div>
+           <div class="row justify-content-center">             
+                
+           </div>
+        </div>
+    </footer>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    
+</body>
+
+</html>
