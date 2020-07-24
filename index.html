@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <title>DebugUs</title>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon">
+                    
+                </span>
+            </button>
+
+
+
+            <a class="navbar-brand mr-auto" href="#"><img src="img/logo.png" height="30" width="41"></a>
+            <div class="collapse navbar-collapse" id="Navbar"> 
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"><a class="nav-link" href="#">
+                    <span class="fa fa-home fa-lg"></span>
+                    Home</a> </li>
+                
+                    <li class="nav-item"><a class="nav-link" href="./documentation.html">
+                        <span class="fa fa-list fa-lg"></span>
+                        Documentation</a> </li>
+                        <li class="nav-item"><a class="nav-link" href="./aboutus.html">
+                            <span class="fa fa-info fa-lg"></span>
+                            About Us</a> </li>
+                <!--<li class="nav-item"><a class="nav-link" href="#">
+                    <span class="fa fa-list fa-lg"></span>
+                    Menu</a> </li>
+                <li class="nav-item"><a class="nav-link" href="./contactus.html">
+                    <span class="fa fa-address-card fa-lg"></span>
+                    Contact</a> </li> -->
+            </ul>
+            </div>
+        </div>
+
+    </nav>
+    <header class="jumbotron">
+        <div class="container">
+            <div class="row row-header">
+                <div class="col-12 col-sm-6">
+                    <h1>DebugUs</h1>
+                    <p>Mars Colonization Program<br>
+                        Mentorship Program 2020 <br> Microsoft</p>
+                </div>
+                <div class="col-12 col-sm align-self-center">
+                    <img src="img/logo.png" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </header>
+<!--------------------------------------------------------------------->
+<body> 
+    <div class="row row-content">
+        <div class="col-12 col-sm-6" ><table id="myTable" border="1" style="cursor: -webkit-grab; cursor: grab;"> 
+    
+        </table>
+        <form> 
+            step1:
+        <input type="button" onclick="createTable()" value="Create a Grid" >  <br>
+        step2: 
+         <input type="button" onclick="mark_starting_point()" value="Mark Starting Point"  style="background-color: red;"> <br>
+        step3: 
+        <input type="button" onclick="mark_ending_point()" value="Mark Ending Point"  style="background-color: green;"><br>
+        step4: 
+        
+        <input type="button" onclick="mark_the_barrier_points()" value="Mark Barrier Points" style="background-color: gray;"><br>
+        step5: Choose any one of the following algorithm <br>
+        
+        
+          <button class="btn btn-info btn-sm" value="A*" onClick="start_Astar_finder()">A* path finding</button> <br>
+          <button class="btn btn-info btn-sm" value="bfs" onClick="click_bfs()">Breadth First Search</button> <br>
+        <!--  <button class="btn btn-info btn-sm" value="Dijkstra_finder" onClick="dijkstra_finder">Dijkstra Finder</button> -->
+
+          <br>
+        step6: <button class="btn btn-primary btn-sm" onClick="window.location.reload();">Clear</button>
+        </form>
+    
+    
+    </div>
+        <div class="col-12 col-sm-6"> <div class="Instruction">
+    
+            <div class="card">
+                <h3 class="card-header bg-info text-white">Instructions</h3>
+                <div class="card-body">
+                    <ol>
+                        <li>Create Table by clicking on "Create a Grid" button</li>
+                        <li>Mark starting point. First click on the button "Mark Starting Point" then click on the cell which you want to make the Starting point. It will be converted to a red cell after that.</li>
+                        <li>Mark ending point. Click on the button "Mark Ending Point" and then click on the cell which you want to make as ending point. It will be converted to a green cell after that. </li>
+                        <li>Mark barrier points. Click on the button "Mark Barrier Points" and then click on the cells you want to make as barriers. It will be converted to a grey cell after that.
+                
+                           
+                
+                        </li>
+                        <li>Click on any one of the Path Finding Algorithm from the list.  </li>
+                        <li>Press "Clear" before restarting the game.</li>
+                    </ol>
+                    <span class="badge badge-pill badge-secondary">Note: 
+                        </span>
+                        Everytime before starting new search, one needs to create the table from starting.<br>
+                         Cheers!
+                </div>
+            </div>
+            
+        
+            
+        </div>
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    <p id="demo"></p><br>
+    <p id="path"></p>
+    </body>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">             
+                <div class="col-4 offset-1 col-sm-6">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="./aboutus.html">About Us</a></li>
+                        <li><a href="./documentation.html">Documentation</a></li>
+                       
+                    </ul>
+                </div>
+                <div class="col-7 col-sm-5">
+                    <h5>Our Github Repo link</h5>
+                    
+		              <i class="fa fa-github fa-lg"></i><a href="https://github.com/VaibhaviAgrawal/mars-colonisation-program">click here</a><br>
+		              
+                </div>
+                
+           </div>
+           <div class="row justify-content-center">             
+                
+           </div>
+        </div>
+    </footer>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="source.js"></script>
+</body>
+
+</html>
